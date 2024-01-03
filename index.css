@@ -1,0 +1,106 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url('i1.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  height: 100vh; /* Set the body height to full viewport height */
+}
+
+  .container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #textInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #addButton {
+    padding: 8px 15px;
+    background-color:  #1cecf3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 15px;
+    font-weight: bolder;
+  }
+  
+  #addButton:hover {
+    background-color: #2846f1;
+  }
+  
+  .display-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+  }
+  .delete-button {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* Visibility is set to visible by default */
+  }
+  
+  .delete-button:hover {
+    /* No additional styling on hover */
+    color: red;
+  }
+  
+  
+  .tick-mark {
+    position: absolute;
+    left: -20px;
+    visibility: hidden;
+  }
+  
+  li.completed .tick-mark {
+    visibility: visible;
+    color: #4caf50;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
